@@ -1,0 +1,39 @@
+.coinList {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.coinList__listHolder {
+  height: 100%;
+}
+.coinList__listHolder__searchBarHolder {
+  display: flex;
+  justify-content: center;
+}
+.coinList__listHolder__categories {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 10px;
+}
+
+.paginationButtons {
+  list-style: none;
+  display: flex;
+  margin-block: 30px;
+  gap: 20px;
+}
+.paginationButtons li a {
+  display: block;
+  padding: 10px 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.paginationButtons li a:hover {
+  background-color: #243141;
+  background-color: rgba(255, 255, 255, 0.6);
+}/*# sourceMappingURL=CoinList.css.map */

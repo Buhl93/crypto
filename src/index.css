@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  padding-inline: 15px;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+a,
+p {
+  color: #243141;
+  text-decoration: none;
+}/*# sourceMappingURL=index.css.map */

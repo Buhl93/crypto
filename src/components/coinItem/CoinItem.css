@@ -1,0 +1,28 @@
+.coinItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 100px;
+  padding-block: 10px;
+  padding-inline: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  transition: 0.2s ease-in-out;
+}
+.coinItem__info {
+  display: flex;
+  align-items: center;
+}
+.coinItem__info__symbol {
+  width: 100px;
+}
+.coinItem__info img {
+  max-height: 35px;
+}
+.coinItem__info .imageHolder {
+  width: 90px;
+}
+.coinItem:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}/*# sourceMappingURL=CoinItem.css.map */

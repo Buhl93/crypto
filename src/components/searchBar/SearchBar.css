@@ -1,0 +1,18 @@
+.searchBar {
+  padding: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50px;
+  color: #243141;
+  width: 600px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.searchBar::-moz-placeholder {
+  color: #243141;
+}
+.searchBar:-ms-input-placeholder {
+  color: #243141;
+}
+.searchBar::placeholder {
+  color: #243141;
+}/*# sourceMappingURL=SearchBar.css.map */

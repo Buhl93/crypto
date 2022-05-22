@@ -1,0 +1,23 @@
+@import "./styles/reuse/_variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $color-bg;
+}
+
+.container {
+  padding-inline: 15px;
+  max-width: 1400px;
+  margin-inline: auto;
+}
+
+a,
+p {
+  color: $color-secondary;
+  text-decoration: none;
+}

@@ -1,0 +1,35 @@
+@import "../../styles/reuse/_variables";
+
+.coinItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(white, 0.2);
+  border-radius: 100px;
+  padding-block: 10px;
+  padding-inline: 50px;
+  box-shadow: $box-shadow;
+  margin-top: 15px;
+  transition: 0.2s ease-in-out;
+
+  &__info {
+    display: flex;
+    align-items: center;
+
+    &__symbol {
+      width: 100px;
+    }
+
+    img {
+      max-height: 35px;
+    }
+
+    .imageHolder {
+      width: 90px;
+    }
+  }
+
+  &:hover {
+    background-color: rgba(white, 0.6);
+  }
+}

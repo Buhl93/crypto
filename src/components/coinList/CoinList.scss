@@ -1,0 +1,45 @@
+@import "../../styles/reuse/_variables";
+
+.coinList {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__listHolder {
+    height: 100%;
+    &__searchBarHolder {
+      display: flex;
+      justify-content: center;
+    }
+
+    &__categories {
+      display: flex;
+      justify-content: space-between;
+      padding-block: 10px;
+    }
+  }
+}
+
+.paginationButtons {
+  list-style: none;
+  display: flex;
+  margin-block: 30px;
+  gap: 20px;
+  li {
+    a {
+      display: block;
+      padding: 10px 15px;
+      border-radius: 5px;
+      box-shadow: $box-shadow;
+      background-color: rgba(white, 0.2);
+      cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        background-color: $color-secondary;
+        background-color: rgba(white, 0.6);
+      }
+    }
+  }
+}

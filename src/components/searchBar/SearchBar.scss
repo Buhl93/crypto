@@ -1,0 +1,14 @@
+@import "../../styles/reuse/_variables";
+
+.searchBar {
+  padding: 20px;
+  border: none;
+  background-color: rgba(white, 0.2);
+  border-radius: 50px;
+  color: $color-secondary;
+  width: 600px;
+  box-shadow: $box-shadow;
+  &::placeholder {
+    color: $color-secondary;
+  }
+}
