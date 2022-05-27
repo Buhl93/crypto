@@ -2,7 +2,6 @@
 
 .coinList {
   width: 100%;
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -16,8 +15,21 @@
 
     &__categories {
       display: flex;
+      align-items: center;
       justify-content: space-between;
-      padding-block: 10px;
+      height: $list-item-height;
+      padding-inline: $list-item-pad-inline;
+      p {
+        &:first-child {
+          width: 5%;
+        }
+        &:nth-child(2){
+          width: 45%;
+        }
+        &:nth-child(3){
+          width: 50%;
+        }
+      }
     }
   }
 }

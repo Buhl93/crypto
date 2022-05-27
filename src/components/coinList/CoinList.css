@@ -1,6 +1,5 @@
 .coinList {
   width: 100%;
-  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -14,8 +13,19 @@
 }
 .coinList__listHolder__categories {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  padding-block: 10px;
+  height: 50px;
+  padding-inline: 50px;
+}
+.coinList__listHolder__categories p:first-child {
+  width: 5%;
+}
+.coinList__listHolder__categories p:nth-child(2) {
+  width: 45%;
+}
+.coinList__listHolder__categories p:nth-child(3) {
+  width: 50%;
 }
 
 .paginationButtons {

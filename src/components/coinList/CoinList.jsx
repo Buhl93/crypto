@@ -12,7 +12,7 @@ import "./CoinList.css";
 const CoinList = () => {
   const [filteredCoins, setFilteredCoins] = useState([]);
   const [searchWord, setSearchWord] = useState("");
-  const listCategories = ["Coin", "Name", "Price"];
+  const listCategories = ["#", "Name", "Price", "24h"];
   const url =
     "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=30&page=1&sparkline=false";
   const { data: coins, error, isPending } = useFetch(url);
@@ -23,7 +23,6 @@ const CoinList = () => {
   const [displayCoins, setDisplayCoins] = useState(
     filteredCoins.slice(coinsViewed, coinsViewed + coinsPerPage)
   );
-  // const displayCoins = filteredCoins.slice(coinsViewed, coinsViewed + coinsPerPage)
 
   const pageCount = Math.ceil(filteredCoins.length / coinsPerPage);
 
@@ -75,14 +74,14 @@ const CoinList = () => {
 
             {error && <div>Something went wrong</div>}
 
+            {displayCoins.length === 0 && (
+              <div>Nothing matched your search...</div>
+            )}
+
             {displayCoins &&
               displayCoins.map((coin) => {
                 return <CoinItem key={coin.id} coin={coin} />;
               })}
-
-            {displayCoins.length === 0 && (
-              <div>Nothing matched your search...</div>
-            )}
           </div>
         </div>
       </div>

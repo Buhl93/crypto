@@ -4,10 +4,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  height: $list-item-height;
   background-color: rgba(white, 0.2);
   border-radius: 100px;
-  padding-block: 10px;
-  padding-inline: 50px;
+  padding-block: $list-item-pad-block;
+  padding-inline: $list-item-pad-inline;
   box-shadow: $box-shadow;
   margin-top: 15px;
   transition: 0.2s ease-in-out;
@@ -15,18 +17,39 @@
   &__info {
     display: flex;
     align-items: center;
+    width: 50%;
 
-    &__symbol {
-      width: 100px;
+    &-rank {
+      min-width: 30px;
+      width: 10%;
     }
 
-    img {
-      max-height: 35px;
+    &-image {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: calc($list-item-height - 20px);
+      width: 50px;
+      img {
+        height: 100%;
+      }
     }
 
-    .imageHolder {
-      width: 90px;
+    &-name {
+      min-width: 150px;
+      width: 35%;
     }
+
+    &-symbol {
+      min-width: 80px;
+      width: 55%;
+    }
+  }
+
+  &__eco {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
   }
 
   &:hover {
